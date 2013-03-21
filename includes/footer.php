@@ -1,12 +1,11 @@
 			<footer>
-				<a href="http://www.korytegman.com">Website by Kory Tegman</a>
+				<a href="http://www.korytegman.com"><small>Website by Kory Tegman</small></a>
 			</footer>
 		</div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-
+        <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
         <script src="js/plugins.js"></script>
-        <script src="js/vendor/jquery.fittext.js"></script>
         <script src="js/main.js"></script>
 
         <script>

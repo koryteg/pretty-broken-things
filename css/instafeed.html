@@ -1,0 +1,39 @@
+
+
+<p>It seems like everybody is trying to get their Instagram pictures embedded into their blog or site or whatever they use. This task can be super annoying because searching through the Internet there are a ton of tools and plugins but they all have their own issues and rules that you have to abide by. Such as: </p>
+<ul>
+	<li>1. They are huge and dump a ton of code into your app and it takes forever to load.</li>
+	<li>2. They are a bitch to style.</li>
+	<li>3. or you just cant style them at all.</li>
+</ul>
+  
+<p>The only other option is to do it from the ground up by registering your website as an approved service that is allowed to use the Instagram API and then allow your website to have access to your feed, and then you might be able to start sorting through the API to get help actually embedding your photo’s into your site. This is kind of a steep time commitment and/or learning curve.</p>
+
+<p> I figured I would try and spare you the distress of trying and hating all these things by showing you the fastest easiest way have found for embedding an Instagram feed that you can actually control. 
+<i>Note you will need to know some HTML, CSS, and minimal javascript.</i></p>
+<p>Getting this setup was super simple.
+Step one: Download and include jquery.instagram https://github.com/potomak/jquery-instagram
+
+This is a super small jquery plugin that allows us to interact with instagram directly.
+We need to Add a div with the class “instagram”, and then call a function that looks like this:</p>
+<pre class="brush: js; gutter: false;">
+	$(".instagram").instagram({
+	      userId: 'yourUserId',
+	      accessToken: 'yourAccessToken’
+	  }); 
+</pre>
+<p>Now we are going to get our userId and accessToken with this handy tool that helps us get around setting up all the Oauth for our app and just gives us an accessToken.
+<a href=”http://jelled.com/instagram/access-token”>Here</a>
+there are instructions on how to get the userId and accessToken on the site when you click “how do I get my clientId?”</p>
+
+<p>Plug your newly granted userId and accessToken into the JS function you called earlier.
+Your feed should show up when you save and reload your page.</p> 
+
+<p>Now just style it with CSS. There are also some other options you can add to the JS, such as picture size and number of pictures loaded, but ill leave you to mess around with that.</p>
+<p>As always let me know if this is helpful, what you think, and any questions you have.
+<br />
+<br />
+Thanks,
+<br />
+Kory
+</p>
